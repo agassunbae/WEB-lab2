@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram main page</title>
+        <style>
+            body {
+                background-color: #fafafa;
+            }
+            #iphone-mockup {
+                position: absolute;
+                z-index: 1;
+                margin: 30px 255px;
+            }
+            #post-photo {
+                position: absolute;
+                z-index: 2;
+                margin: 124px 400px;
+            }
+            .boxes {
+                position: absolute;
+                background-color: white;
+                border: 1px solid rgb(221, 219, 219);
+                width: 300px;
+                margin-left: 694px;
+            }
+            #login-box {
+                margin-top: 58px;
+                height: 360px;
+            }
+            #register-box {
+                margin-top: 445px;
+                width: 325px;
+                height: 30px;
+                text-align: center;
+                padding-top: 22px;
+            }
+            #instagram-logo {
+                margin: 15px 70px;
+            }
+
+            .inputs {
+                width: 259px;
+                margin: 10px 0 -5px 30px;
+                height: 35px;
+                background-color: #fafafa;
+                border: 1px solid rgb(221, 219, 219);
+                border-radius: 3px;
+                font-size: 12px;
+                padding-left: 5px;
+                font-family: "Segoe UI", sans-serif;
+            }
+            ::placeholder {
+                color: rgb(155, 153, 153);
+            }
+            #login-button {
+                color: white;
+                background-color: #0095f6;
+                border-color: transparent;
+                border-radius: 3px;
+                width: 268px;
+                height: 30px;
+                margin: 20px 0 55px 30px;
+            }
+            #facebook-login {
+                color: #385185;
+                font-family: "Segoe UI", sans-serif;
+                font-weight: 645;
+                font-size: 14px;
+                border-top: 1px solid rgb(224, 218, 218);
+                margin-left: 30px;
+                text-align: center;
+                padding-top: 30px;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+            #text-or {
+                position: absolute;
+                text-align: center;
+                color: rgb(129, 129, 129); 
+                font-family: "Segoe UI", sans-serif;
+                font-size: 13px;
+                font-weight: 645;
+                margin: 65px -163px;
+                background-color: white;
+                padding: 0 10px;
+            }
+            #facebook-logo {
+                position: absolute;
+                margin: 2px -230px;
+            }
+            #password-reset {
+                color: #385185;
+                font-family: "Segoe UI", sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                margin: 100px 110px;
+                line-height: 50px;
+            }
+            #new-account-text {
+                color: rgb(34, 33, 33);
+                font-family: "Segoe UI", sans-serif;
+                font-size: 14px;
+            }
+            #register-text {
+                color: #0095f6;
+                font-family: "Segoe UI", sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            input[type=button]:disabled {
+                opacity: 0.4;
+            }
+            #install-text {
+                font-family: "Segoe UI", sans-serif;
+                margin: 530px 790px;
+                position: absolute;
+                font-size: 14px;
+                width: 160px;
+                color: rgb(34, 33, 33);
+            }
+            #google-play-logo {
+                margin: 565px 875px;
+                position:absolute;
+                width: 135px;
+            }
+            #app-store-logo {
+                margin: 565px 730px;
+                position:absolute;
+                width: 135px;
+            }
+            #options-category {
+                position:absolute;
+                margin:700px 260px;
+                font-family: "Segoe UI", sans-serif;
+                font-size: 12px;
+                color:grey;
+                width: 850px;
+                line-height: 25px;
+                text-align: center;
+                height: 150px;
+            }
+            .options {
+                margin-left: 18px;
+            }
+            #languages {
+                border: transparent;
+                color: grey;
+                background-color: transparent;
+                width: 70px;
+                font-size: 12px;
+            }
+            .options:hover {
+                color: grey;
+            }
+            .options:active {
+                opacity: 0.4;
+            }
+            #p-2 a:link {
+                color: grey;
+                text-decoration: none;
+            }
+            #p-2 a:visited {
+                color: grey;
+                text-decoration: none;
+            }
+            #facebook-link:link, #password-reset-link:link {
+                text-decoration: none;
+            }
+            #facebook-link:visited, #password-reset-link:visited {
+                text-decoration: none;
+                color: #385185;
+            }
+            #facebook-login:active, #password-reset-link:active {
+                opacity: 0.3;
+            }
+            #register-link:link {
+                text-decoration: none;
+            }
+            #register-link:visited  {
+                text-decoration: none;
+                color: #0095f6;
+            }
+            #register-link:active  {
+                opacity: 0.3;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="instagram-photos">
+            <img id="iphone-mockup" src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png" alt="iphone" height="610px">
+            <img id="post-photo" src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" alt="post-photo" width="244px">
+        </div>
+
+        <form>
+            <fieldset class="boxes" id="login-box">
+                <img id="instagram-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png" alt="instagram-logo" width="185px">
+                
+                <input class="inputs" type="text" placeholder="Номер телефона, имя пользователя или электронная почта">
+                <input class="inputs" type="password" placeholder="Пароль">
+                <input id="login-button" type="button" disabled="disabled" value="Войти">
+                <span id="text-or">ИЛИ</span>
+                <span id="facebook-login"><a id="facebook-link" href="https://www.facebook.com/r.php">Войти через Facebook</a></span>
+                <img id="facebook-logo" src="http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" alt="Facebook logo" width="20px">
+                <span id="password-reset"><a id="password-reset-link" href="https://www.instagram.com/accounts/password/reset/">Забыли пароль?</a></span>
+            </fieldset>
+            <fieldset class="boxes" id="register-box">
+                <span id="new-account-text">У вас ещё нет аккаунта?</span>
+                <span id="register-text"><a id="register-link" href="https://www.instagram.com/accounts/emailsignup/">Зарегистрироваться</a></span>
+            </fieldset>
+        </form>
+        
+        <span id="install-text">Установите приложение</span>
+        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D928932B1-486B-4A8A-AA2F-15D574C4B919%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank"><img id="google-play-logo" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png" alt="google play logo"></a>
+        <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank"><img id="app-store-logo" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png" alt="aps store logo"></a>
+        
+        <div id="options-category">   
+            <p id="p-2">
+                <a href="https://about.instagram.com/"><span class="options">Информация</span></a>
+                <a href="https://about.instagram.com/blog"><span class="options">Блог</span></a>
+                <a href="https://about.instagram.com/about-us/careers"><span class="options">Вакансии</span></a>
+                <a href="https://help.instagram.com/"><span class="options">Помощь</span></a>
+                <a href="https://www.instagram.com/developer/"><span class="options">API</span></a>
+                <a href="https://help.instagram.com/519522125107875"><span class="options">Конфиденциальность</span></a>
+                <a href="https://help.instagram.com/581066165581870"><span class="options">Условия</span></a>
+                <a href="https://www.instagram.com/directory/profiles/"><span class="options">Популярные аккаунты</span></a>
+                <a href="https://www.instagram.com/directory/hashtags/"><span class="options">Хэштеги</span></a>
+                <a href="https://www.instagram.com/explore/locations/"><span class="options">Места</span></a>
+                <a href="https://www.instagram.com/topics/beauty/"><span class="options">Красота</span></a>
+                <a href="https://www.instagram.com/topics/dance-and-performance/"><span class="options">Танцы и выступления</span></a>
+                <a href="https://www.instagram.com/topics/fitness/"><span class="options">Фитнес</span></a>
+                <a href="https://www.instagram.com/topics/food-and-drink/"><span class="options">Еда и напитки</span></a>
+                <a href="https://www.instagram.com/topics/home-and-garden/"><span class="options">Дом и сад</span></a>
+                <a href="https://www.instagram.com/topics/music/"><span class="options">Музыка</span></a>
+                <a href="https://www.instagram.com/topics/visual-arts/"><span class="options">Изобразительное искусство</span></a><br>
+            </p>    
+            <select id="languages">
+            <option value="0">Русский</option>
+            <option value="1">Казахский</option>
+            <option value="2">Английский</option>
+            <option value="4">Немецкий</option>
+            <option value="5">Испанский</option>
+            <option value="6">Португальский</option>
+            <option value="7">Корейский</option>
+            <option value="8">Японский</option>
+            <option value="9">Арабский</option>
+            <option value="10">Китайский</option>
+            </select>
+
+            <span>© Instagram от Facebook, 2021</span>
+        </div>
+    </body>
+</html>
