@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Microsoft main page</title>
+        <style>
+            #main-pic {
+                width: 1220px;
+                margin: 50px 60px;
+                position: absolute;
+            }
+            #microsoft-logo {
+                width: 110px;
+                margin: 8px 70px;
+                margin-right: 13px;
+                margin-bottom: -7px;
+            }
+            .headings {
+                font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 13px;
+                margin: 9px;
+            }
+            #heading-all-products {
+                margin-left: 478px;
+                font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 13px;
+                border-color: transparent;
+            }
+            #loupe {
+                position: absolute;
+                width: 30px;
+                margin: 0px 30px;
+            }
+            #login-pic {
+                position: absolute;
+                width: 40px;
+                margin: -3px 65px;
+            }
+            #intro-text {
+                position: absolute;
+                width: 400px;
+            }
+            #intro-text {
+                margin: 160px 135px;
+                font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+            }
+            #txt-1 {
+                font-weight: 550;
+                font-size: 23px;
+            }
+            #txt-2 {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            #txt-3 {
+                background-color: black;
+                color: white;
+                font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+                font-weight: 550;
+                font-size: 15px;
+                border: 1px solid black;
+                padding: 9px 20px;
+                margin-right: 10px;
+            }
+            #txt-4 {
+                background-color: transparent;
+                color: black;
+                font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: 550;
+                font-size: 15px;
+                border-color: transparent;
+                padding: 8px 17px;
+            }
+            #blocks-photo {
+                position: absolute;
+                margin: 520px 60px;
+                
+            }
+            #pic-1, #pic-2, #pic-3 {
+                width:287px;
+                margin-right: 20px;
+            }
+            #pic-4 {
+                position: absolute;
+                width:283px;
+            }
+            #blocks-text {
+                position: absolute;
+                margin: 720px 60px;
+                width: 750px;
+                font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <img id="main-pic" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DRie?ver=f61d&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true">
+        <img id="microsoft-logo" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft logo">
+        
+        <span class="headings">Microsoft 365</span>
+        <span class="headings">Office</span>
+        <span class="headings">Windows</span>
+        <span class="headings">Поддержка</span>
+        <select id="heading-all-products">
+            <option value="0">Все продукты Microsoft</option>
+            <option value="1">Software</option>
+            <option value="2">PCs & Devices</option>
+            <option value="3">Развлечения</option>
+            <option value="4">Для бизнеса</option>
+        </select>
+        <img id="loupe" src="loupe.png" alt="loupe">
+        <img id="login-pic" src="login.png" alt="login pic">
+
+        <div id="intro-text">
+            <span id="txt-1">Microsoft 365</span>
+            <p id="txt-2">Приложения Office премиум, дополнительное облачное хранилище, продвинутые инструменты обеспечения безопасности — все в одной удобной подписке</p>
+            
+            <input id="txt-3" type="button" value="До 6 человек >">
+            <input id="txt-4" type="button" value="Для 1 человека >">
+        </div>
+
+        <div id="blocks-photo">
+            <img id="pic-1" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4CFyx?ver=25c5&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&x=839&y=615&aim=true">  
+            <img id="pic-2" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rzE2?ver=aa0b&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true">
+            <img id="pic-3" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hD2k?ver=6539&q=90&m=6&h=278&w=494&b=%23FFFFFFFF&l=f&o=t&aim=true">
+            <img id="pic-4" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE37Bcs?ver=e981&q=90&m=6&h=276&w=494&b=%23FFFFFFFF&l=f&o=t&aim=true">
+        </div>
+        <div id="blocks-text">
+            <p id="b-1">
+                <span class="st-1" id="t-1">Microsoft Teams</span><br>
+                <span class="st-2" id="t-2">Общайтесь, проводите собрания, звоните и сотрудничайте.</span>
+            </p>
+            <p id="b-2">
+                <span class="st-1" id="t-1">Microsoft Edge</span><br>
+                <span class="st-2" id="t-2">Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</span>
+            </p id="b-3">
+                <span class="st-1" id="t-1">Microsoft OneDrive</span><br>
+                <span class="st-2" id="t-2">Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</span>
+            <p id="b-4">
+                <span class="st-1" id="t-1">Обновление Windows 10</span><br>
+                <span class="st-2" id="t-2">Предоставляя новые функции, которые помогут вам успевать больше, общаться чаще и экономить время.</span>
+            </p>
+        </div>   
+        
+        
+        <div id="block-buttons">
+            <input class="st-3" id="t-3" type="button" value="Подробнее >"><br>
+            <input class="st-3" id="t-3" type="button" value="Скачать >"><br>
+            <input class="st-3" id="t-3" type="button" value="Подробнее >"><br>
+            <input class="st-3" id="t-3" type="button" value="Узнать больше >"><br>
+        </div>
+    </body>
+</html>
